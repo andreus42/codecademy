@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <title>Form a Story</title>
+  </head>
+  <body>
+    <section id="top">
+      <img src="https://s3.amazonaws.com/codecademy-content/courses/learn-html-forms/formAStoryLogo.svg" alt="Form A Story Logo">
+    </section>
+
+    <section id="main">
+      <h1>Complete the Form -<br> Complete the Story!</h1>
+      <hr>
+        <form action="story.html" method="GET">
+            <label for="animal-1">Animal:</label>
+            <input id="animal-1" name="animal-1" type="text" placeholder="ex. cat"required>
+          <br>
+            <label for="animal-2">Animal-2</label>
+            <input id="animal-2" name="animal-2" type="text" placeholder="ex. cow" required>
+          <br>
+            <label for="animal-3">Animal-3</label>
+            <input name="animal-3" id="animal-3" type="text" placeholder="ex. crow" required>
+          <br>
+            <label for="adj-1">Adjective (past tense)</label>
+            <input name="adj-1" id="adj-1" type="text" placeholder="ex. brilliant" required>
+          <br>
+            <label for="verb-1">Verb (ends with ing):</label>
+            <input name="verb-1" id="verb-1" type="text" placeholder="running" required>
+          <br>
+            <label for="num-1">Number:</label>
+            <input name="num-1" id="num-1" type="number" placeholder="ex 1, 2, 3" required>
+          <br>
+          <span>
+            Yes or No:
+            <label for="yes"></label>
+            <input id="yes" name="answer" type="radio" value ="yes" required>
+            <label for="no"></label>
+            <input id="no" name="answer" type="radio" value ="no" required>
+          </span>
+          <br>
+            <label for="speed">Speed</label>
+            <select id="speed" name="speed">
+                <option value="faster">Faster</option>
+                <option value="slower">Slower</option>
+                <option value="longer">Longer</option>
+                <option value="shorter">Shorter</option>
+            </select>
+          <br>
+          <label for="quote">Motivational Quote:</label>
+           <input id="quote" name="quote" type="text" placeholder="inspirational quote here..." list="quote-choices" required>
+           <datalist id="quote-choices">
+              <option value="winner gets ice cream!"></option>
+              <option value="Win or lose, don't fall asleep!"></option>
+            </datalist>
+          <br>
+          <label for="message">Meaningful Message:</label><br>
+            <textarea id="message" name="message" rows="8" columns="40"></textarea>
+          <input type="submit">
+        </form>
+    </section>
+  </body>
+</html>
