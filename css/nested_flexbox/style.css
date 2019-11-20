@@ -1,0 +1,19 @@
+section {
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  div {
+    width: 300px;
+    height: 200px;
+    border: 1px solid red;
+  }
+  
+  .with-content {
+    display: flex; /*will make our third flex item, within our `<section>` element, a flex container*/
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
